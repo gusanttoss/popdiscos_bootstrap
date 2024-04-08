@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP Discos</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+
+    <style>
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        section {
+            height: 100vh;
+            background-color: #fff;
+            padding-top: 70px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+        }
+
+        .carousel-item {
+
+        height: 800px; /* Defina a altura desejada */
+
+    }
+
+    .carousel-item img {
+
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .produtos h1 {
+        padding: 24px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="navbar navbar-expand-lg">
+        <div class="container">
+            <h1>Pop Discos</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promoções</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+            </div>
+
+                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100" src="image/foto1.png" />
+                            <div class="carousel-caption">
+                                <h2>BEYONCÉ - RENAISSANCE</h2>
+                                <p><button type="button" class="btn btn-primary">Compre agora</button></p>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="image/foto2.png" />
+                            <div class="carousel-caption">
+                                <h2>ARIANA GRANDE - ETERNAL SUNSHINE</h2>
+                                <p><button type="button" class="btn btn-primary">Compre agora</button></p>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="image/foto3.png" />
+                            <div class="carousel-caption">
+                                <h2>MILEY CYRUS - BANGERZ</h2>
+                                <p><button type="button" class="btn btn-primary">Compre agora</button></p>
+                            </div>
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100" src="image/foto4.png" />
+                            <div class="carousel-caption">
+                                <h2>DUA LIPA - FUTURE NOSTALGIA</h2>
+                                <p><button type="button" class="btn btn-primary">Compre agora</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                    </div>
+                </div>
+
+                <div class="produtos" id="produtos">
+                    <h1>Produtos</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card">
+                                <img src="image/produto1.jpg" />
+                                <div class="card-body">
+                                    <h4 class="card-title">BANGERZ</h4>
+                                    <p class="card-text">
+                                        Miley Cyrus - 2013
+                                    </p>
+                                    <p><strong>Mídia: Físico</strong></p>
+                                    <a href="#" class="btn btn-primary">Mais informações</a>
+                                    <a href="#" class="btn btn-success">Adicionar</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card">
+                                <img src="image/produto2.jpg" />
+                                <div class="card-body">
+                                    <h4 class="card-title">RENAISSANCE</h4>
+                                    <p class="card-text">
+                                        Beyoncé - 2022
+                                    </p>
+                                    <p><strong>Mídia: Físico</strong></p>
+                                    <a href="#" class="btn btn-primary">Mais informações</a>
+                                    <a href="#" class="btn btn-success">Adicionar</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card">
+                                <img src="image/produto3.jpg" />
+                                <div class="card-body">
+                                    <h4 class="card-title">ETERNAL SUNSHINE</h4>
+                                    <p class="card-text">
+                                        Ariana Grande - 2024
+                                    </p>
+                                    <p><strong>Mídia: Físico</strong></p>
+                                    <a href="#" class="btn btn-primary">Mais informações</a>
+                                    <a href="#" class="btn btn-success">Adicionar</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card">
+                                <img src="image/produto4.jpg" />
+                                <div class="card-body">
+                                    <h4 class="card-title">FUTURE NOSTALGIA</h4>
+                                    <p class="card-text">
+                                        Dua Lipa - 2020
+                                    </p>
+                                    <p><strong>Mídia: Físico</strong></p>
+                                    <a href="#" class="btn btn-primary">Mais informações</a>
+                                    <a href="#" class="btn btn-success">Adicionar</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card">
+                                <img src="image/produto5.jpg" />
+                                <div class="card-body">
+                                    <h4 class="card-title">ANTi</h4>
+                                    <p class="card-text">
+                                        Rihanna - 2016
+                                    </p>
+                                    <p><strong>Mídia: Físico</strong></p>
+                                    <a href="#" class="btn btn-primary">Mais informações</a>
+                                    <a href="#" class="btn btn-success">Adicionar</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <article class="card">
+                                <img src="image/produto6.jpg" />
+                                <div class="card-body">
+                                    <h4 class="card-title">STARBOY</h4>
+                                    <p class="card-text">
+                                        The Weeknd - 2018
+                                    </p>
+                                    <p><strong>Mídia: Físico</strong></p>
+                                    <a href="#" class="btn btn-primary">Mais informações</a>
+                                    <a href="#" class="btn btn-success">Adicionar</a>
+                                </div>
+                            </article>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                
+
+
+
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
